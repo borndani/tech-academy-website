@@ -1,0 +1,293 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fonts -->
+    <script src="https://kit.fontawesome.com/8e018d0a24.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        .image-box {
+            height: 300px;
+            overflow: hidden;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .image-box:hover {
+            transform: scale(1.03);
+        }
+
+        .image-box img {
+            object-fit: cover;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        * {
+            box-sizing: border-box;
+            /* Prevents padding/margin from breaking layout */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            /* Hides horizontal scroll bar */
+        }
+
+         /* Dropdown styling */
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%; /* appear below the parent */
+      left: 0;
+      background-color: #444;
+      min-width: 180px;
+      z-index: 1000;
+    }
+
+   
+
+        @media screen {
+
+        }
+    </style>
+    <style>
+
+    </style>
+
+
+</head>
+
+<body>
+  <header>
+        <div class="bg-secondary pt-0 container-fluid d-flex justify-content-between align-items-center py-3 ">
+            <!-- logo -->
+            <a href="index.html" style="text-decoration: none;">
+                <h1 style="color: #212529;">TECH ACADEMY</h1>
+            </a>
+            <!-- list for homepage -->
+            <nav>
+                <ul class="d-flex list-unstyled  gap-3">
+                    <li class="cursor-pointer" style="padding: 0px;"><a href=""
+                            class="text-decoration-none  text-white list-unstyled">About</a></li>
+                    <li class=" cursor-pointer" style="padding: 0px;"><a href=""
+                            class="text-decoration-none  text-white list-unstyled">Contact</a></li>
+                    <li class="cursor-pointer" style="padding: 0px;"><a href=""
+                            class="text-decoration-none  text-white list-unstyled">Course</a></li>
+                </ul>
+
+            </nav>
+
+            <a href="form.html"> <button href="form.html" class=" btn rounded-pill bg-primary ">Register</button></a>
+        </div>
+    </header>
+    <!-- main start here -->
+    <main>
+        <!-- section 1 -->
+        <!-- image section -->
+        <div style=" background-image: url(/image/homepage.jpg);background-size: cover; background-position: center; height: 100vh; width: 100%;"
+            class="text-white">
+            <div class="justify-content-center align-items-center text-center">
+                <h2 style="padding-top: 250px;font-size: 58px; font-weight: 500;"> LEARN A DIGITAL SKILL TODAY
+                </h2>
+                <p style="font-size:20px ;font-weight: 300;">In a world that’s moving faster than ever, technology isn’t
+                    waiting and neither should you. Whether it's your first step <br>
+                    into the digital space or you’re trying to level up your skills, now is the perfect time to dive in.
+                    From designing stunning websites <br>
+                    to building powerful apps, editing content, or analyzing data tech is the new literacy. And the best
+                    part? You don’t need a degree to start. <br>
+                    Just curiosity, commitment, and the courage to begin.
+                </p>
+                <a href="form.html"><button class="button btn rounded-pill bg-primary"
+                        style="width:300px; font-weight: 500; align-content: center;">REGISTER</button></a>
+
+            </div>
+
+        </div>
+        <!-- second section -->
+        <!-- second section first-col -->
+        <div style="background-color: #6c757d18; padding-top: 70px;">
+            <div class="container d-flex justify-content-between align-items-center pt-0">
+                <div class="text-left pt-0 w-50">
+                    <h2 class="pt-0  text-center" style=" font-size: 50px; ">WHY YOU SHOULD LEARN A SKILL?</h3>
+                        <P style="font-size: 20px;">We live in a time where having a skill is no longer optional it’s
+                            survival. The world has
+                            changed. Degrees alone don’t open doors the way they used to. What employers, clients, and
+                            <br>
+                            even opportunities now look for is what
+                            you can do not just what you know.
+                            Learning a skill isn’t just about money it’s about freedom.
+                            Freedom to earn from anywhere. Freedom to start something of your own. You don’t need to be
+                            a
+                            genius. You just need to be willing to grow.
+                        </P>
+                </div>
+                <!-- second sectiond SECOND-COL -->
+                <div class=" w-50 pt-0">
+                    <h2 class="pt-0 text-center" style="font-size: 50px;">WHAT CAN YOU <br> DO WITH IT?</h2>
+                    <p style="font-size: 20px ;">Your skill can connect you to jobs across the world from the comfort of
+                        your home. Freelance
+                        platforms, remote companies, online gigs all waiting for people like you. You can go from
+                        learner
+                        to earner, then to owner. With just one skill, you can launch your own brand, service, or
+                        agency.
+                        Whether you're a student, job seeker, creative, or entrepreneur having a skill makes you more
+                        resourceful, confident, and in control of your future.
+
+                        This is not a trend. It’s a movement.</p>
+                </div>
+            </div>
+        </div>
+        <!-- third seection -->
+
+        <div class="container my-5">
+            <div class="row g-4">
+                <!-- first col -->
+                <div class="col-4">
+                    <div class="image-box" style="height: 300px;"><img src="./image/web-development.jpg" alt=""
+                            class="img-fluid h-100 w-100 rounded">
+                    </div>
+                    <div>
+                        <h3 style="color:#dd8d14;  font-size: 30px;" class="text-center ">WEB-DEVELOPMENT </h3>
+                        <P>In today's fast-changing world, almost <br> everything we interact with daily websites, <br>
+                            mobile
+                            apps, e-commerce stores, blogs, even <br> the platforms where we chat and scroll is powered
+                            by
+                            web development. And guess what? These platforms are built by people who started with little
+                            or no tech background, just like you.
+
+                            You don’t need to be a genius, a mathematician, or a computer wizard to get started. What
+                            you need is interest, a little curiosity, and the willingness to learn something new.</P>
+                    </div>
+                </div>
+                <!-- second col -->
+                <div class="col-4">
+                    <div class="image-box" style="height: 300px;"><img src="./image/video-editing.jpg" alt=""
+                            class="img-fluid h-100 w-100 rounded">
+                    </div>
+                    <h3 style="color:#dd8d14;  font-size: 30px;" class="text-center">VIDEO EDITING</h3>
+                    <P>In today’s digital world, videos rule the internet. From TikToks and YouTube vlogs to business
+                        promotions and online courses, video is the language of attention—and video editors are the
+                        translators.
+
+                        But video editing is not just cutting and pasting clips together. It’s about storytelling. It’s
+                        about turning raw footage into something that makes people laugh, cry, buy, subscribe, or take
+                        action. It’s the magic behind what makes a simple idea look cinematic, professional, and
+                        powerful.</P>
+                </div>
+                <!-- third col -->
+                <div class="col-4">
+                    <div class="image-box" style="height: 300px;" class="col-4"> <img src="./image/social-Media.jpg"
+                            alt="" class="img-fluid h-100 w-100 rounded">
+                    </div>
+                    <div>
+                        <h3 style="color:#dd8d14;  font-size: 30px;" class="text-center">SOCIAL MEDIA MAGEMENT</h3>
+                        <P>Every business, brand, church, or personal brand today is online—and social media is the
+                            front door. If you’re not showing up right, you’re losing attention. And attention is the
+                            new currency.
+
+                            That’s where social media managers come in. They are the digital voice, the online presence
+                            builders, and the behind-the-scenes strategists who make content shine and grow communities.
+                        </P>
+                    </div>
+                </div>
+                <!-- fourth col -->
+                <div class="col-4">
+                    <div class="image-box" style=" height: 300px;"><img src="./image/marketing.jpg" alt=""
+                            class="img-fluid h-100 w-100 rounded"></div>
+                    <div>
+                        <h3 style="color:#dd8d14;  font-size: 30px;" class="text-center">DIGITAL MARKETING</h3>
+                        <P>Imagine having the best product or idea in the world — but nobody knows about it.
+
+                            That’s where marketing comes in.
+
+                            Marketing is the art of getting people to notice, understand, and want what you or your
+                            business offers. Whether you’re selling clothes, running a church, offering tech services,
+                            or even building a personal brand, marketing is the bridge between what you have and who
+                            needs it. Marketing is one of the most powerful and in-demand digital skills today. Every
+                            business, online store, church, musician, creator, and even politician needs to be marketed
+                            well.</P>
+                    </div>
+                </div>
+                <!-- fifth col -->
+                <div class="col">
+                    <div class="image-box" style=" height: 300px;"><img src="./image/cyber-security.jpg" alt=""
+                            class="img-fluid h-100 w-100 rounded">
+                    </div>
+                    <div>
+                        <h3 style="color:#dd8d14;  font-size: 30px;" class="text-center">CYBER SECURITY</h3>
+                        <P>In today’s world, everything is online — our money, conversations, business operations,
+                            personal data, and even faith-based platforms. But just like a house needs strong doors and
+                            locks, the digital world needs protection. That’s where cybersecurity comes in.
+
+                            Cybersecurity is the skill of protecting computers, networks, websites, apps, and data from
+                            hackers, scammers, and harmful attacks. It’s about keeping people safe in the digital world.
+                        </P>
+                    </div>
+                </div>
+                <!-- sixth -->
+                <div class="col-4">
+                    <div class="image-box" style=" height: 300px;">
+                        <img src="./image/last-row.jpg" alt="" class="img-fluid h-100 w-100 rounded">
+
+                    </div>
+                    <div>
+                        <h3 style="color:#dd8d14;  font-size: 30px;" class="text-center">DATA ANALYSIS</h3>
+                        <P>In today’s digital age, data is everywhere. Every time you shop online, scroll through social
+                            media, visit a website, or even walk with your phone in your pocket, data is being
+                            generated. But raw data is like a puzzle — without analysis, it means nothing.</P>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer style="background-color:  #6c757d ; height: 150px;">
+        <div class=" text-center " style="background-color:  #6c757d ;  width: 100%; padding-top: 20px ; ">
+            <!-- logo -->
+            <div class="row justify-content-between ">
+                <div class="col">
+                    <a style="text-decoration: none;" href="index.html">
+                        <h1 style="color: #212529;">TECH ACADEMY</h1>
+                    </a>
+                    <p style="font-size: 14px;">We are in patnership with you to build tech world together</p>
+                </div>
+                <!-- navigation links -->
+                <div class="col text-start d-flex "
+                    style="padding-left: 100px; justify-content: center; flex-direction: column;">
+                    <h3 style="font-size: 22px;">Link</h3>
+                    <a href="" style="text-decoration: none; color: white; font-size: 14px;"
+                        onmouseover="this.style.color='lightgray'" onmouseout="this.style.color='white'"
+                        class="list-unstyled ">About</a>
+                    <a href="" style="text-decoration: none; color: white; font-size: 14px;"
+                        onmouseover="this.style.color='lightgray'" onmouseout="this.style.color='white'"
+                        class="list-unstyled">Contact</a>
+                    <a href="" style="text-decoration: none; color: white; font-size: 14px;"
+                        onmouseover="this.style.color='lightgray'" onmouseout="this.style.color='white'"
+                        class="list-unstyled">Courses</a>
+
+                </div>
+                <!-- icon -->
+                <div class="col d-flex flex-column align-items-center gap-2">
+                    <span class="social-icon" style=" padding: 3px;"> <a href=""
+                            style="color: #1daa61; font-size: 20px; "><i class="fa-solid fa-phone"></i></a></span>
+                    <span class="social-icon"> <a href="" style="color: #4fc3f7; font-size: 20px;"> <i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </span>
+                    <span class="social-icon"> <a href="https://www.instagram.com/"
+                            style="color: #ec5796; font-size: 20px;"><i
+                                class="fa-brands fa-square-instagram"></i></a></span>
+                </div>
+            </div>
+            <p style="font-size: 14px;">@Copy right, 2025</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
