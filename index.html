@@ -10,6 +10,10 @@
     <script src="https://kit.fontawesome.com/8e018d0a24.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
+        * {
+            margin: 0;
+        }
+
         .image-box {
             height: 300px;
             overflow: hidden;
@@ -34,18 +38,158 @@
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-         
+
             /* Hides horizontal scroll bar */
+        }
+
+        .nav {
+            justify-content: space-between;
+            align-items: center;
+
+            max-width: 1200px;
+            gap: 2rem;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        .menu-icon {
+            display: none;
+        }
+
+        .background {
+
+            opacity: 1 #737b7a;
         }
 
 
 
-        @media (min-width:480px) and (max-width:767px){
-            header{
-                width: 100vh;
-                overflow-x: hidden;
+        @media (max-width:765px) {
+            header {
+                width: 100%;
+                margin: 0;
+
             }
-            header div h1 a {font-size: 16px;}
+
+            body {
+              overflow-x: hidden;
+            }
+
+            footer {
+                margin: 0;
+            }
+
+
+
+            body {
+
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            header div h1 a {
+                font-size: 16px;
+            }
+
+            main div {
+                width: 100%;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+
+            .nav {
+                display: none;
+                flex-direction: column;
+                align-items: start;
+                width: 100%;
+                margin-top: 1rem;
+            }
+
+            input:checked~.nav {
+                display: flex;
+            }
+
+            .btn {
+                padding: 6px 10px;
+                font-size: 14px;
+            }
+
+            .background {
+                width: 100%;
+            }
+
+            .background p {
+                display: none;
+            }
+
+            .background h2 {
+                font-size: 18px;
+            }
+
+            #main-con {
+                flex-direction: column;
+                gap: 20px;
+                width: 100% !important;
+                text-wrap: wrap;
+            }
+
+            #main-con h2 {
+                width: 100%;
+                text-align: center;
+            }
+
+            #main-con p {
+                width: 100%;
+                height: fit-content;
+                font-size: 5px;
+                text-align: left;
+
+            }
+
+            #first-col {
+                width: 100%;
+                order: 2;
+
+            }
+
+            #first-col1 {
+                width: 100%;
+            }
+
+            #second-col {
+                max-width: 100%;
+            }
+
+            #first-colh1 {
+                font-size: 20px;
+                width: 100%;
+                display: block;
+                height: 800px;
+            }
+
+            #first-colp {
+                width: 100%;
+
+
+            }
+
+            .second-sec {
+                width: 100%;
+            }
+
+            .col-4 {
+                flex: 0 0 calc(50% - 20px);
+            }
+
+            .image-box {
+                width: 100%;
+            }
+
+
         }
     </style>
     <style>
@@ -57,25 +201,25 @@
 
 <body>
     <header>
-        <div class="bg-secondary pt-0 container-fluid d-flex justify-content-between align-items-center py-3 ">
+        <div style="flex-wrap: wrap; margin: auto;"
+            class="bg-secondary pt-0 container-fluid d-flex justify-content-between align-items-center py-3 ">
             <!-- logo -->
             <a href="index.html" style="text-decoration: none;">
                 <h1 style="color: #212529;">TECH ACADEMY</h1>
             </a>
             <!-- list for homepage -->
-            <nav>
-                <ul class="d-flex list-unstyled  gap-3">
-                    <li class="cursor-pointer" style="padding: 0px;"><a href=""
-                            class="text-decoration-none  text-white list-unstyled">About</a></li>
-                    <li class=" cursor-pointer" style="padding: 0px;"><a href=""
-                            class="text-decoration-none  text-white list-unstyled">Contact</a></li>
-                    <li class="cursor-pointer" style="padding: 0px;"><a href=""
-                            class="text-decoration-none  text-white list-unstyled">Course</a></li>
-                </ul>
+            <div class="nav">
+                <label for="toogle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+                <input type="checkbox" id="toogle">
+                <a href="" class="text-decoration-none  text-white list-unstyled">ABOUT</a></li>
+                <a href="" class="text-decoration-none  text-white list-unstyled">CONTACT</a></li>
+                <a href="" class="text-decoration-none  text-white list-unstyled">COURSES</a></li>
 
-            </nav>
 
-            <a href="form.html"> <button href="form.html" class=" btn rounded-pill bg-primary ">Register</button></a>
+                <a href="form.html"> <button href="form.html"
+                        class=" btn rounded-pill bg-primary ">Register</button></a>
+            </div>
+
         </div>
     </header>
     <!-- main start here -->
@@ -83,11 +227,11 @@
         <!-- section 1 -->
         <!-- image section -->
         <div style=" background-image: url(/image/homepage.jpg);background-size: cover; background-position: center; height: 100vh; width: 100%;"
-            class="text-white">
+            class="background text-white">
             <div class="justify-content-center align-items-center text-center">
-                <h2 style="padding-top: 250px;font-size: 58px; font-weight: 500;"> LEARN A DIGITAL SKILL TODAY
+                <h2 style="padding-top: 250px;font-size: 58px; font-weight: 400;"> LEARN A DIGITAL SKILL TODAY
                 </h2>
-                <p style="font-size:20px ;font-weight: 300;">In a world that’s moving faster than ever, technology isn’t
+                <p style="font-size:20px ;font-weight: 400;">In a world that’s moving faster than ever, technology isn’t
                     waiting and neither should you. Whether it's your first step <br>
                     into the digital space or you’re trying to level up your skills, now is the perfect time to dive in.
                     From designing stunning websites <br>
@@ -103,24 +247,26 @@
         </div>
         <!-- second section -->
         <!-- second section first-col -->
-        <div style="background-color: #6c757d18; padding-top: 70px;">
-            <div class="container d-flex justify-content-between align-items-center pt-0">
-                <div class="text-left pt-0 w-50">
-                    <h2 class="pt-0  text-center" style=" font-size: 50px; ">WHY YOU SHOULD LEARN A SKILL?</h3>
-                        <P style="font-size: 20px;">We live in a time where having a skill is no longer optional it’s
-                            survival. The world has
-                            changed. Degrees alone don’t open doors the way they used to. What employers, clients, and
-                            <br>
-                            even opportunities now look for is what
-                            you can do not just what you know.
-                            Learning a skill isn’t just about money it’s about freedom.
-                            Freedom to earn from anywhere. Freedom to start something of your own. You don’t need to be
-                            a
-                            genius. You just need to be willing to grow.
-                        </P>
+        <div style="background-color: #6c757d18; padding-top: 70px;" class="second-sec">
+            <div class=" container d-flex justify-content-between align-items-center pt-0" id="main-con">
+                <div class="text-left pt-0 w-50" id="first-col1">
+                    <h2 id="first-colh1" class="pt-0  text-center" style=" font-size: 50px; ">WHY YOU SHOULD LEARN A
+                        SKILL?</h2>
+                    <P id="first-colp" style="font-size: 20px;">We live in a time where having a skill is no longer
+                        optional it’s
+                        survival. The world has
+                        changed. Degrees alone don’t open doors the way they used to. What employers, clients, and
+                        <br>
+                        even opportunities now look for is what
+                        you can do not just what you know.
+                        Learning a skill isn’t just about money it’s about freedom.
+                        Freedom to earn from anywhere. Freedom to start something of your own. You don’t need to be
+                        a
+                        genius. You just need to be willing to grow.
+                    </P>
                 </div>
                 <!-- second sectiond SECOND-COL -->
-                <div class=" w-50 pt-0">
+                <div class=" w-50 pt-0" id="second-col">
                     <h2 class="pt-0 text-center" style="font-size: 50px;">WHAT CAN YOU <br> DO WITH IT?</h2>
                     <p style="font-size: 20px ;">Your skill can connect you to jobs across the world from the comfort of
                         your home. Freelance
@@ -240,7 +386,7 @@
         </div>
     </main>
     <!-- footer -->
-    <footer style="background-color:  #6c757d ; height: 150px;">
+    <footer style="background-color:  #6c757d ; height: 150px; width: 100%;">
         <div class=" text-center " style="background-color:  #6c757d ;  width: 100%; padding-top: 20px ; ">
             <!-- logo -->
             <div class="row justify-content-between ">

@@ -35,127 +35,145 @@
         span {
             color: red;
         }
+
         body {
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-           
+
             /* Hides horizontal scroll bar */
         }
 
+        .nav {
+            justify-content: space-between;
+            align-items: center;
+
+            max-width: 1200px;
+            gap: 2rem;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        .menu-icon {
+            display: none;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <div class="bg-secondary pt-0 container-fluid d-flex justify-content-between align-items-center py-3 ">
-            <!-- logo -->
-            <a href="index.html" style="text-decoration: none;">
-                <h1 style="color: #212529;">TECH ACADEMY</h1>
-            </a>
-            <!-- list for homepage -->
-            <nav>
-                <ul class="d-flex list-unstyled  gap-3">
-                    <li class="cursor-pointer" style="padding: 0px;"><a href=""
-                            class="text-decoration-none  text-white list-unstyled">About</a></li>
-                    <li class=" cursor-pointer" style="padding: 0px;"><a href=""
-                            class="text-decoration-none  text-white list-unstyled">Contact</a></li>
-                    <li class="cursor-pointer" style="padding: 0px;"><a href=""
-                            class="text-decoration-none  text-white list-unstyled">Course</a></li>
-                </ul>
+        <header>
+            <div style="flex-wrap: wrap; margin: auto;"
+                class="bg-secondary pt-0 container-fluid d-flex justify-content-between align-items-center py-3 ">
+                <!-- logo -->
+                <a href="index.html" style="text-decoration: none;">
+                    <h1 style="color: #212529;">TECH ACADEMY</h1>
+                </a>
+                <!-- list for homepage -->
+                <div class="nav">
+                    <label for="toogle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+                    <input type="checkbox" class="checker">
+                    <a href="" class="text-decoration-none  text-white list-unstyled">ABOUT</a></li>
+                    <a href="" class="text-decoration-none  text-white list-unstyled">CONTACT</a></li>
+                    <a href="" class="text-decoration-none  text-white list-unstyled">COURSES</a></li>
 
-            </nav>
 
-            <a href="form.html"> <button href="form.html" class=" btn rounded-pill bg-primary ">Register</button></a>
-        </div>
-    </header>
-    <!-- main section -->
-    <main style=" height: auto;   justify-content: center; align-items: center;">
-        <form
-            style="align-items: center; margin-top: 40px; justify-content: center;padding: 20px; border: solid 2px #ccc; width: 500px; justify-content: center; display: block; align-items: center; flex-direction: column; background-color: #f5f1eb;"
-            id="form">
-            <h2>Form Validation</h2>
-            <div>
-                <label for="">Name</label>
-                <input type="text" id="name" placeholder="Name">
-                <span style="color: red;" id="nameError"></span>
-            </div>
-            <div>
-                <label for="">Username</label>
-                <input type="text" id="user" placeholder="Username">
-                <span style="color: red;" id="userError"></span>
-            </div>
-            <div>
-                <label for="">Phone number</label>
-                <input type="text" id="phonenumber" placeholder="Phone number">
-                <span style="color: red;" id="phoneError"></span>
-            </div>
-
-            <div>
-                <label for="">Email</label>
-                <input type="email" placeholder="email" name="" id="email">
-                <span style="color: red;" id="emailError"></span>
-            </div>
-            <div>
-                <label for="">Password</label>
-                <input type="password" name="" id="pass" placeholder="password">
-                <span style="color: red;" id="passError"></span>
-            </div>
-            <div>
-                <label for="">Confirm password</label>
-                <input type="password" name="" id="conpass" placeholder="Confirm password">
-                <span style="color: red;" id="confirmError"></span>
-            </div>
-            <!-- button -->
-            <div style="border: 4px rgba(0, 0, 0, 0.445) ; "><button style="border-radius: 4px;"
-                    id="submit">submit</button></div>
-
-        </form>
-    </main>
-    <footer style="background-color:  #6c757d ; height: 150px;">
-        <div class=" text-center " style="background-color:  #6c757d ;  width: 100%; padding-top: 20px ; ">
-            <!-- logo -->
-            <div class="row justify-content-between ">
-                <div class="col">
-                    <a style="text-decoration: none;" href="index.html">
-                        <h1 style="color: #212529;">TECH ACADEMY</h1>
-                    </a>
-                    <p style="font-size: 14px;">We are in patnership with you to build tech world together</p>
-                </div>
-                <!-- navigation links -->
-                <div class="col text-start d-flex "
-                    style="padding-left: 100px; justify-content: center; flex-direction: column;">
-                    <h3 style="font-size: 22px;">Link</h3>
-                    <a href="" style="text-decoration: none; color: white; font-size: 14px;"
-                        onmouseover="this.style.color='lightgray'" onmouseout="this.style.color='white'"
-                        class="list-unstyled ">About</a>
-                    <a href="" style="text-decoration: none; color: white; font-size: 14px;"
-                        onmouseover="this.style.color='lightgray'" onmouseout="this.style.color='white'"
-                        class="list-unstyled">Contact</a>
-                    <a href="" style="text-decoration: none; color: white; font-size: 14px;"
-                        onmouseover="this.style.color='lightgray'" onmouseout="this.style.color='white'"
-                        class="list-unstyled">Courses</a>
 
                 </div>
-                <!-- icon -->
-                <div class="col d-flex flex-column align-items-center gap-2">
-                    <span class="social-icon" style=" padding: 3px;"> <a href=""
-                            style="color: #1daa61; font-size: 20px; "><i class="fa-solid fa-phone"></i></a></span>
-                    <span class="social-icon"> <a href="" style="color: #4fc3f7; font-size: 20px;"> <i
-                                class="fa-brands fa-whatsapp"></i></a>
-                    </span>
-                    <span class="social-icon"> <a href="" style="color: #ec5796; font-size: 20px;"><i
-                                class="fa-brands fa-square-instagram"></i></a></span>
+                <a href="form.html"> <button href="form.html"
+                        class=" btn rounded-pill bg-primary ">Register</button></a>
+            </div>
+
+        </header>
+        <!-- main section -->
+        <main style=" height: auto;   justify-content: center; align-items: center;">
+            <form
+                style="align-items: center; margin-top: 40px; justify-content: center;padding: 20px; border: solid 2px #ccc; width: 500px; justify-content: center; display: block; align-items: center; flex-direction: column; background-color: #f5f1eb;"
+                id="form">
+                <h2>Form Validation</h2>
+                <div>
+                    <label for="">Name</label>
+                    <input type="text" id="name" placeholder="Name">
+                    <span style="color: red;" id="nameError"></span>
+                </div>
+                <div>
+                    <label for="">Username</label>
+                    <input type="text" id="user" placeholder="Username">
+                    <span style="color: red;" id="userError"></span>
+                </div>
+                <div>
+                    <label for="">Phone number</label>
+                    <input type="text" id="phonenumber" placeholder="Phone number">
+                    <span style="color: red;" id="phoneError"></span>
                 </div>
 
+                <div>
+                    <label for="">Email</label>
+                    <input type="email" placeholder="email" name="" id="email">
+                    <span style="color: red;" id="emailError"></span>
+                </div>
+                <div>
+                    <label for="">Password</label>
+                    <input type="password" name="" id="pass" placeholder="password">
+                    <span style="color: red;" id="passError"></span>
+                </div>
+                <div>
+                    <label for="">Confirm password</label>
+                    <input type="password" name="" id="conpass" placeholder="Confirm password">
+                    <span style="color: red;" id="confirmError"></span>
+                </div>
+                <!-- button -->
+                <div style="border: 4px rgba(0, 0, 0, 0.445) ; "><button style="border-radius: 4px;"
+                        id="submit">submit</button></div>
+
+            </form>
+        </main>
+        <footer style="background-color:  #6c757d ; height: 150px;">
+            <div class=" text-center " style="background-color:  #6c757d ;  width: 100%; padding-top: 20px ; ">
+                <!-- logo -->
+                <div class="row justify-content-between ">
+                    <div class="col">
+                        <a style="text-decoration: none;" href="index.html">
+                            <h1 style="color: #212529;">TECH ACADEMY</h1>
+                        </a>
+                        <p style="font-size: 14px;">We are in patnership with you to build tech world together</p>
+                    </div>
+                    <!-- navigation links -->
+                    <div class="col text-start d-flex "
+                        style="padding-left: 100px; justify-content: center; flex-direction: column;">
+                        <h3 style="font-size: 22px;">Link</h3>
+                        <a href="" style="text-decoration: none; color: white; font-size: 14px;"
+                            onmouseover="this.style.color='lightgray'" onmouseout="this.style.color='white'"
+                            class="list-unstyled ">About</a>
+                        <a href="" style="text-decoration: none; color: white; font-size: 14px;"
+                            onmouseover="this.style.color='lightgray'" onmouseout="this.style.color='white'"
+                            class="list-unstyled">Contact</a>
+                        <a href="" style="text-decoration: none; color: white; font-size: 14px;"
+                            onmouseover="this.style.color='lightgray'" onmouseout="this.style.color='white'"
+                            class="list-unstyled">Courses</a>
+
+                    </div>
+                    <!-- icon -->
+                    <div class="col d-flex flex-column align-items-center gap-2">
+                        <span class="social-icon" style=" padding: 3px;"> <a href=""
+                                style="color: #1daa61; font-size: 20px; "><i class="fa-solid fa-phone"></i></a></span>
+                        <span class="social-icon"> <a href="" style="color: #4fc3f7; font-size: 20px;"> <i
+                                    class="fa-brands fa-whatsapp"></i></a>
+                        </span>
+                        <span class="social-icon"> <a href="" style="color: #ec5796; font-size: 20px;"><i
+                                    class="fa-brands fa-square-instagram"></i></a></span>
+                    </div>
+
+                </div>
+                <p style="font-size: 14px;">@Copy right, 2025</p>
             </div>
-            <p style="font-size: 14px;">@Copy right, 2025</p>
-        </div>
 
-    </footer>
+        </footer>
 
 
-<script src="index.js"></script>
+        <script src="index.js"></script>
 
 
 </body>
