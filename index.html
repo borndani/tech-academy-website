@@ -161,6 +161,23 @@
 
         }
         @media (max-width: 450px) {
+            .menu-icon {
+                display: block;
+            }
+
+            .nav {
+                display: none;
+                flex-direction: column;
+                align-items: end;
+                width: 100%;
+                background-color: #6c757d;
+                margin-top: 1rem;
+            }
+
+            input:checked~.nav {
+                display: flex;
+            }
+            
   /* Mak@media (max-width: 450px) {
   /* Force 1 column per row on small screens */
   #mage .col-6 {
