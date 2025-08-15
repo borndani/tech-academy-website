@@ -59,6 +59,38 @@
         .menu-icon {
             display: none;
         }
+        @media (max-width: 450px) {
+  main {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #form {
+    width: 90%; /* instead of fixed 500px */
+    max-width: 500px; /* same look on larger screens */
+    margin-top: 20px;
+    padding: 20px;
+    border: solid 2px #ccc;
+    background-color: #f5f1eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #form input {
+    width: 100%; /* make inputs stretch inside the form */
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  #form button {
+    width: 100%;
+    border-radius: 4px;
+  }
+        }
+        
     </style>
 </head>
 
